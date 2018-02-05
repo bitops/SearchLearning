@@ -8,7 +8,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController!.definesPresentationContext = true
+//        self.navigationController!.definesPresentationContext = true
         
         self.resultSearchController = UISearchController(searchResultsController: nil)
         self.resultSearchController.searchResultsUpdater = self
@@ -37,20 +37,13 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let text = searchResults[indexPath.row]
         NSLog("cell with text \(text) was tapped")
+        
         let board = UIStoryboard(name: "Main", bundle: Bundle.main)
         let resultController : ResultViewController = board.instantiateViewController(withIdentifier: "Result") as! ResultViewController
         self.navigationController!.pushViewController(resultController, animated: true)
+        
+        self.resultSearchController.dismiss(animated: false)
     }
-    
-//    func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        NSLog("the segue was triggered")
-//    }
-    
-    /*
-     let board = UIStoryboard(name: "Main", bundle: Bundle.main)
-     let resultController : ResultViewController = board.instantiateViewController(withIdentifier: "Result") as! ResultViewController
-     self.present(resultController, animated: true) {}
-     */
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as UITableViewCell?
