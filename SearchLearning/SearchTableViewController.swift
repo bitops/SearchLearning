@@ -8,7 +8,7 @@ class SearchTableViewController: UITableViewController, UISearchResultsUpdating 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.navigationController!.definesPresentationContext = true
+        self.navigationController!.definesPresentationContext = true
         
         self.resultSearchController = UISearchController(searchResultsController: nil)
         self.resultSearchController.searchResultsUpdater = self
