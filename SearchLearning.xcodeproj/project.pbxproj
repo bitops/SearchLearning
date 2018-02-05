@@ -13,6 +13,8 @@
 		9E4D86DD2026D5FC00341ACC /* SearchLearning.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D86DB2026D5FC00341ACC /* SearchLearning.xcdatamodeld */; };
 		9E4D86DF2026D5FC00341ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E4D86DE2026D5FC00341ACC /* Assets.xcassets */; };
 		9E4D86E22026D5FC00341ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4D86E02026D5FC00341ACC /* LaunchScreen.storyboard */; };
+		9E4D86EA2026D72F00341ACC /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D86E92026D72F00341ACC /* SearchTableViewController.swift */; };
+		9E4D86EC2026DABD00341ACC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4D86EB2026DABD00341ACC /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9E4D86DE2026D5FC00341ACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E4D86E12026D5FC00341ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E4D86E32026D5FC00341ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E4D86E92026D72F00341ACC /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		9E4D86EB2026DABD00341ACC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				9E4D86E02026D5FC00341ACC /* LaunchScreen.storyboard */,
 				9E4D86E32026D5FC00341ACC /* Info.plist */,
 				9E4D86DB2026D5FC00341ACC /* SearchLearning.xcdatamodeld */,
+				9E4D86E92026D72F00341ACC /* SearchTableViewController.swift */,
+				9E4D86EB2026DABD00341ACC /* ResultViewController.swift */,
 			);
 			path = SearchLearning;
 			sourceTree = "<group>";
@@ -139,9 +145,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E4D86EC2026DABD00341ACC /* ResultViewController.swift in Sources */,
 				9E4D86D72026D5FC00341ACC /* ViewController.swift in Sources */,
 				9E4D86DD2026D5FC00341ACC /* SearchLearning.xcdatamodeld in Sources */,
 				9E4D86D52026D5FC00341ACC /* AppDelegate.swift in Sources */,
+				9E4D86EA2026D72F00341ACC /* SearchTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
